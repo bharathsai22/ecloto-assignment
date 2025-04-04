@@ -1,0 +1,154 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f4f4;
+}
+.app{
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h1,h2,h3{
+    color:#333;
+}
+.products{
+    margin-bottom: 30px;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap:20px;
+}
+.product{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:5px;
+    background: white;
+
+}
+.quantity-selector{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.quantity-selector button{
+    background: rgb(245, 236, 236);
+    border: 1px solid #ddd;
+    padding:5px 10px;
+    cursor:pointer;
+}
+.quantity-selector span{
+    margin: 0 10px;
+}
+.add-to-cart{
+    background: rgb(50, 91, 239);
+    color:white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.add-to-cart:hover{
+    background: rgb(50, 91, 239);
+
+}
+.cart{
+    border-top:2px solid #eee;
+    padding-top: 20px;
+}
+.progress-bar{
+    height: 30px;
+    background: rgb(237, 219, 219);
+    border-radius: 15px;
+    margin:15px 0;
+    position: relative;
+    overflow: hidden;
+}
+.progress{
+    height: 100%;
+    background: rgb(50, 91, 239);
+    transition: width 0.3s ease;
+}
+.progress-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+.subtotal{
+    font-size: 18px;
+    margin:15px 0;
+}
+.empty-cart{
+    color:#666;
+    font-style: italic;
+}
+.cart-items{
+    margin-top:20px;
+
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.item-info{
+    flex:1;
+}
+.item-controls{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+.item-controls button{
+    background: rgb(214, 207, 207);
+    border:1px solid #ddd;
+    padding:2px 8px;
+    cursor: pointer;
+}
+.item-total{
+    margin-left:10px;
+    min-width: 120px;
+    display: inline-block;
+}
+.remove{
+    background: rgb(227, 26, 26);
+    color: rgb(160, 51, 51);
+    border:none !important;
+    padding: 5px 10px !important;
+    border-radius: 4px;
+}
+.free-tag{
+    background: rgb(6, 190, 6);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size:12px;
+    margin-left: 10px;
+}
+.gift-message{
+    background: rgb(240, 240, 58);
+    color:green;
+    padding:10px;
+    border-radius:4px;
+    margin-bottom: 15px;
+    text-align:center;
+    animation: fadeIn 0.5s;
+
+
+}
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
